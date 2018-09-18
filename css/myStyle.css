@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   text-align: justify;
   line-height: 1.5rem;
+  padding: 0px 10px;
 }
 
 #services table {
@@ -126,6 +127,7 @@ tr:nth-child(odd) {background: #CCC}
 
 #about img {
   margin: auto;
+  padding: 0px 5px;
 }
 
 #about .about-text {
@@ -142,6 +144,7 @@ tr:nth-child(odd) {background: #CCC}
   text-transform: capitalize;
   text-align: justify;
   line-height: 1.5rem;
+  padding: 0px 10px;
 }
 
 
