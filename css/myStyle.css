@@ -127,7 +127,7 @@ tr:nth-child(odd) {background: #CCC}
 
 #about img {
   margin: auto;
-  padding: 0px 5px;
+  padding-left: 10px;
 }
 
 #about .about-text {
@@ -137,6 +137,7 @@ tr:nth-child(odd) {background: #CCC}
 #about h2 {
   font-size: 2rem;
   font-weight: lighter;
+  padding: 0px 10px;
 }
 
 #about p {
