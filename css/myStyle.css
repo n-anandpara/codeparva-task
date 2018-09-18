@@ -38,7 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .intro-box {
   width: 100%;
-  height: 100%;
   background-color: rgba(0,0,0,0.6);
   color: #fff;
   margin-top: 33%;
@@ -121,7 +120,7 @@ tr:nth-child(odd) {background: #CCC}
 
 
 #about {
-  margin-top: 100px;
+  margin-top: 10ir0px;
   position: relative;
 }
 
@@ -151,11 +150,11 @@ tr:nth-child(odd) {background: #CCC}
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg.jpg) no-repeat fixed;
   background-size: cover;
   color: #fff;
-  padding: 50px;
+  padding: 50px 10px;
 }
 
 #getStarted p {
-  padding: 30px;
+  padding: 30px 10px;
 }
 
 #location-info {
