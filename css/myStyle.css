@@ -60,16 +60,60 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: #fff;
   }
+
+  #contact-bar {
+    color:#fff;
+    display: none;
+  }
+
+  #menu-bar {
+    margin-top: 0px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
+@media only screen and (min-width: 600px) {
+  #contact-bar {
+    color:#fff;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #contact-bar {
+    color:#fff;
+    display: none;
+  }
+}
+
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .navbar-nav .active {
     margin: 5px 0px 0px 30px;
     font-weight: 600;
     color: #fff;
   }
+
+  #contact-bar {
+    color:#fff;
+    display: block;
+  }
+
+  #contact-bar ul li {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #menu-bar{
+    margin-top: 30px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
+
 
 #intro {
   display: table;
@@ -317,11 +361,31 @@ tr:nth-child(odd) {background: #eee}
   left: 0;
 }
 
-.heading {
-  margin: 70px 0px 0px 0px;
-  padding: 10px 0px;
-  background-color: #efefef;
-  font-weight: lighter;
+@media only screen and (max-width: 600px) {
+  .heading {
+    margin: 60px 0px 0px 0px;
+    padding: 10px 0px;
+    background-color: #efefef;
+    font-weight: lighter;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .heading {
+    margin: 60px 0px 0px 0px;
+    padding: 10px 0px;
+    background-color: #efefef;
+    font-weight: lighter;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .heading {
+    margin: 90px 0px 0px 0px;
+    padding: 10px 0px;
+    background-color: #efefef;
+    font-weight: lighter;
+  }
 }
 
 form {
@@ -335,6 +399,37 @@ form input {
   padding: 5px;
   width: 100%;
 }
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+}
+/*
+@media only screen and (max-width: 600px) {
+  form textarea {
+    rows: 5;
+    cols: 12;
+  }
+}
+
+@media only screen and (min-width: 992px){
+form textarea {
+  rows: 5;
+  cols: 59;
+}
+}
+
+@media only screen and (min-width: 600px) {
+  form textarea {
+
+  }
+} */
+
+
 
 #reserve-unit table {
   margin-top: 30px;
@@ -353,7 +448,6 @@ form input {
     width:100%;
     position:absolute;
 }
-
 
 .contact-tables table td {
   padding-top: 15px;
