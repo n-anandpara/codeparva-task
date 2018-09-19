@@ -20,6 +20,8 @@ a:hover, a:active, a:focus {
 
 p {
  font-family: 'PT Sans', sans-serif;
+ padding: 0px;
+ margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,6 +35,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn-colored{
   color: #fff;
   background-color: #74d6b9;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .btn-outline-colored {
@@ -40,6 +44,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   background-image: none;
   border-color: #74d6b9;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .btn-outline-colored:hover {
@@ -82,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     background-color: rgba(0,0,0,0.6);
     color: #fff;
-    margin-top: 50%;
+    margin-top: 60%;
     padding: 10px 0px 10px 10%;
   }
   #intro .intro-box .intro-text h2 {
@@ -111,13 +117,13 @@ h1, h2, h3, h4, h5, h6 {
   #intro .intro-box .intro-text h2 {
     margin: 10px;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   #intro .intro-box .intro-text h3 {
     margin: 10px;
     font-weight: lighter;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -125,6 +131,28 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 768px) {
   #intro .intro-box {
     margin-top: 33%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 10px 0px 10px 10%;
+  }
+
+  #intro .intro-box .intro-text h2 {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 1.9rem;
+  }
+
+  #intro .intro-box .intro-text h3 {
+    margin: 10px;
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #intro .intro-box {
+    margin-top: 45%;
     width: 100%;
     background-color: rgba(0,0,0,0.6);
     color: #fff;
@@ -184,10 +212,11 @@ h1, h2, h3, h4, h5, h6 {
 #intro .intro-box .intro-buttons button{
   margin: 10px;
   color: #fff;
+  padding: auto 50px;
 }
 
 #services {
-  margin: 50px 0px;
+  margin: 100px 0px;
 }
 
 #services .services-text {
@@ -218,6 +247,7 @@ table #tr-head {
   background-color: #74d6b9;
   width: 100%;
   color: #fff;
+  font-weight: bold;
 
 }
 
@@ -232,7 +262,7 @@ tr:nth-child(odd) {background: #eee}
 
 
 #about {
-  margin-top: 150px;
+  margin: 150px auto 50px auto;
   position: relative;
 }
 
@@ -265,7 +295,7 @@ tr:nth-child(odd) {background: #eee}
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg.jpg) no-repeat fixed;
   background-size: cover;
   color: #fff;
-  padding: 50px 10px;
+  padding: 100px 10px;
 }
 
 #getStarted p {
@@ -281,23 +311,24 @@ tr:nth-child(odd) {background: #eee}
   margin: auto;
   background-color: #333333;
   color: #fff;
-  height: 35px;
-  padding-top: 5px;
-  bottom: 0px;
+  height: 50px;
+  padding-top: 10px;
+  bottom: 0;
+  left: 0;
 }
 
-#reserve-unit .heading {
+.heading {
   margin: 70px 0px 0px 0px;
   padding: 10px 0px;
   background-color: #efefef;
   font-weight: lighter;
 }
 
-#reserve-unit form {
+form {
   margin-top: 30px;
 }
 
-#reserve-unit form input {
+form input {
   margin: 10px -10px;
   border-radius: 2px;
   border: 1px solid #ddd;
@@ -307,4 +338,18 @@ tr:nth-child(odd) {background: #eee}
 
 #reserve-unit table {
   margin-top: 30px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height: 90%;
+    width:100%;
+    position:absolute;
 }
