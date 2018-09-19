@@ -283,9 +283,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*..............Services...............*/
-#services {
-  margin: 100px 0px;
+@media only screen and (max-width: 600px) {
+  #services {
+    margin: 10px 0px;
+  }
 }
+
+@media only screen and (min-width: 768px) {
+  #services {
+    margin: 100px 0px;
+  }
+}
+/* #services {
+  margin: 100px 0px;
+} */
 
 #services .services-text {
   /* padding: 0px 20px; */
@@ -332,9 +343,18 @@ tr:nth-child(odd) {background: #eee}
 /*..............Services End Here...............*/
 
 /*..............About...............*/
+@media only screen and (max-width: 600px) {
 #about {
-  margin: 150px auto 50px auto;
+  margin: 30px auto 50px auto;
   position: relative;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #about {
+    margin: 150px auto 50px auto;
+    position: relative;
+  }
 }
 
 #about img {
