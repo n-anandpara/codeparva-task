@@ -5,6 +5,16 @@ body {
   background: #fff;
   color: #666666;
   font-family: 'PT Sans', sans-serif;
+  height: 100%;
+  margin: 0px;
+}
+
+html {
+    padding-bottom: 50px;
+    min-height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
 }
 
 a {
@@ -375,6 +385,9 @@ tr:nth-child(odd) {background: #eee}
   padding-top: 10px;
   bottom: 0;
   left: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
 }
 
 /*...............Page Headings..................*/
