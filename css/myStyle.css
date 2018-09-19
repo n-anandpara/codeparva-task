@@ -145,6 +145,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 20px;
   }
 
+  #contact-bar ul li i {
+    color: #74d6b9;
+  }
+
   #menu-bar{
     margin-top: 38px !important;
     padding-top: 5px;
