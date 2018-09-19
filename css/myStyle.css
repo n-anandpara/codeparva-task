@@ -353,3 +353,11 @@ form input {
     width:100%;
     position:absolute;
 }
+
+
+.contact-tables table td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
