@@ -32,20 +32,40 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
 }
 
-.btn-colored{
-  color: #fff;
-  background-color: #74d6b9;
-  padding-right: 30px;
-  padding-left: 30px;
+/*...............Buttons..................*/
+
+@media only screen and (max-width: 600px) {
+  .btn-colored{
+    color: #fff;
+    background-color: #74d6b9;
+  }
+
+  .btn-outline-colored {
+    color: #74d6b9;
+    background-color: transparent;
+    background-image: none;
+    border-color: #74d6b9;
+  }
+
 }
 
-.btn-outline-colored {
-  color: #74d6b9;
-  background-color: transparent;
-  background-image: none;
-  border-color: #74d6b9;
-  padding-right: 30px;
-  padding-left: 30px;
+@media only screen and (min-width: 600px) {
+  .btn-colored{
+    color: #fff;
+    background-color: #74d6b9;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .btn-outline-colored {
+    color: #74d6b9;
+    background-color: transparent;
+    background-image: none;
+    border-color: #74d6b9;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
 }
 
 .btn-outline-colored:hover {
@@ -53,7 +73,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #74d6b9;
   border-color: #74d6b9;
 }
+/*..............Buttons End Here...............*/
 
+
+/*..............Navbar...............*/
 @media only screen and (max-width: 600px) {
   .navbar-nav .active {
     margin: 5px 0px 0px 0px;
@@ -113,8 +136,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 5px;
   }
 }
+/*..............Navbar End Here...............*/
 
-
+/*..............Banner...............*/
 #intro {
   display: table;
   width: 100%;
@@ -132,19 +156,19 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     background-color: rgba(0,0,0,0.6);
     color: #fff;
-    margin-top: 60%;
+    margin-top: 70%;
     padding: 10px 0px 10px 10%;
   }
   #intro .intro-box .intro-text h2 {
     margin: 10px;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   #intro .intro-box .intro-text h3 {
     margin: 10px;
     font-weight: lighter;
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -184,13 +208,13 @@ h1, h2, h3, h4, h5, h6 {
   #intro .intro-box .intro-text h2 {
     margin: 10px;
     font-weight: 600;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 
   #intro .intro-box .intro-text h3 {
     margin: 10px;
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -235,18 +259,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   }
 
-/* #intro .intro-box .intro-text h2 {
-  margin: 10px;
-  font-weight: 600;
-  font-size: 1.9rem;
-}
-
-#intro .intro-box .intro-text h3 {
-  margin: 10px;
-  font-weight: lighter;
-  font-size: 2.1rem;
-} */
-
 #intro .intro-box .intro-buttons {
   display: inline;
   margin: auto;
@@ -256,9 +268,11 @@ h1, h2, h3, h4, h5, h6 {
 #intro .intro-box .intro-buttons button{
   margin: 10px;
   color: #fff;
-  padding: auto 50px;
 }
+/*..............Banner End Here...............*/
 
+
+/*..............Services...............*/
 #services {
   margin: 100px 0px;
 }
@@ -281,6 +295,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 10px;
 }
 
+/*........All Tables............*/
 table {
   margin: 20px auto;
   border: 1px solid #dddddd;
@@ -292,7 +307,6 @@ table #tr-head {
   width: 100%;
   color: #fff;
   font-weight: bold;
-
 }
 
 table tr td{
@@ -303,8 +317,11 @@ table tr td{
 
 tr:nth-child(even) {background: #FFF}
 tr:nth-child(odd) {background: #eee}
+/*........All Tables Ends Here............*/
 
+/*..............Services End Here...............*/
 
+/*..............About...............*/
 #about {
   margin: 150px auto 50px auto;
   position: relative;
@@ -332,10 +349,9 @@ tr:nth-child(odd) {background: #eee}
   line-height: 1.5rem;
   padding: 0px 10px;
 }
-
+/*..............About End Here...............*/
 
 #getStarted {
-  /* background: url('../img/bg.jpg')  rgba(0,0,0,0.5) no-repeat fixed; */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg.jpg) no-repeat fixed;
   background-size: cover;
   color: #fff;
@@ -360,6 +376,8 @@ tr:nth-child(odd) {background: #eee}
   bottom: 0;
   left: 0;
 }
+
+/*...............Page Headings..................*/
 
 @media only screen and (max-width: 600px) {
   .heading {
@@ -388,6 +406,9 @@ tr:nth-child(odd) {background: #eee}
   }
 }
 
+/*...............Page Headings Ends Here..................*/
+
+/*...............Form..................*/
 form {
   margin-top: 30px;
 }
@@ -408,28 +429,6 @@ textarea {
     width: 100%;
     height: auto;
 }
-/*
-@media only screen and (max-width: 600px) {
-  form textarea {
-    rows: 5;
-    cols: 12;
-  }
-}
-
-@media only screen and (min-width: 992px){
-form textarea {
-  rows: 5;
-  cols: 59;
-}
-}
-
-@media only screen and (min-width: 600px) {
-  form textarea {
-
-  }
-} */
-
-
 
 #reserve-unit table {
   margin-top: 30px;
