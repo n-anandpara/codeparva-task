@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-position: left top;
+  background-attachment: fixed;
   background-size: 100% 100vh;
   /* background-size: cover; */
 }
