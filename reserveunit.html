@@ -14,31 +14,31 @@
       <!--Contact Navbar Ends Here-->
 
       <!--Main Navbar-->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="#">Brand</a>
-              <!-- <a class="nav-link" href="#">Home</a> -->
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#" style="font-size: 2rem;">Brand</a>
+          <!-- <a class="nav-link" href="#">Home</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-              <div class="collapse navbar-collapse" style="text-transform: uppercase;" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="reserveunit.html">Reserve unit</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            </nav>
+          <div class="collapse navbar-collapse" style="text-transform: uppercase;" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html" style="margin: 5px 0px 0px 30px; color: #fff; font-weight: 600;">Home</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="reserveunit.html" style="margin: 5px 10px 0px 0px; color: #fff; font-weight: 600;">Reserve unit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="margin: 5px 20px 0px 0px; color: #fff; font-weight: 600;">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
       <!--Main Navbar Ends Here-->
     </header>
 
@@ -51,13 +51,75 @@
           <div class="col-md-8">
             <form class="" action="" method="post">
               <div class="row">
-                <button type="button" class="btn btn-success btn-sm">Reserve Unit</button>
-                
+                <button type="button" class="btn btn-colored" style="margin: 5px; padding-right: 50px">Tenant</button>
+                <button type="button" class="btn btn-outline-secondary" disabled style="padding-right: 60px; margin: 5px">Unit</button>
+                <button type="button" class="btn btn-outline-secondary" disabled style="margin: 5px"> Confirmation</button>
               </div>
+              <div class="name row">
+                <div class="col-md-6">
+                  <input type="text" name="FirstName" value="" placeholder="First Name *" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="LastName" value="" placeholder="Last Name *" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="tel" name="phone" value="" placeholder="Phone *" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="email" value="" placeholder="Email *" required>
+                </div>
+              </div>
+
+              <input type="text" name="phone" value="" placeholder="Address Line 1 *" required>
+              <input type="text" name="phone" value="" placeholder="Address Line 2 *">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" name="Zip" value="" placeholder="Zip / Postal Code*" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="city" value="" placeholder="City *" required>
+                </div>
+              </div>
+
+              <input type="text" name="State" value="" placeholder="State / Province *" required>
+
+              <!-- <input type="button" name="Next" value="Next" class="btn btn-success" style="float: right;"> -->
+
+              <button type="button" name="button" class="btn btn-colored"  style=" float: right; margin: 10px 10px 25px 0px; padding: 5px 30px;">Next</button>
             </form>
           </div>
           <div class="col-md-4">
-
+            <table>
+              <tbody>
+                <tr id="tr-head">
+                  <td>Size</td>
+                  <td>Rate</td>
+                </tr>
+                <tr style='padding-top: 20px;'>
+                  <td>Outdoor Storage</td>
+                  <td>$35.00</td>
+                </tr>
+                <tr>
+                  <td>05 x 05 CC</td>
+                  <td>$59.95</td>
+                </tr>
+                <tr>
+                  <td>10 x 10</td>
+                  <td>$87.95</td>
+                </tr>
+                <tr>
+                  <td>10 x 15</td>
+                  <td>$124.95</td>
+                </tr>
+                <tr>
+                  <td>10 x 10 CC</td>
+                  <td>$ 135.95</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

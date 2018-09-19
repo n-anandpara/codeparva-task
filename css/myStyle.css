@@ -1,4 +1,5 @@
- @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700');
 
 body {
   background: #fff;
@@ -17,12 +18,34 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
+p {
+ font-family: 'PT Sans', sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin: 0 0 0 0;
   padding: 0;
+  text-transform: capitalize;
+}
+
+.btn-colored{
+  color: #fff;
+  background-color: #74d6b9;
+}
+
+.btn-outline-colored {
+  color: #74d6b9;
+  background-color: transparent;
+  background-image: none;
+  border-color: #74d6b9;
+}
+
+.btn-outline-colored:hover {
+  color: #fff;
+  background-color: #74d6b9;
+  border-color: #74d6b9;
 }
 
 #intro {
@@ -88,6 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 #services h2 {
   font-size: 2rem;
   font-weight: lighter;
+  padding: 0px 10px
 }
 
 #services p {
@@ -98,30 +122,31 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 10px;
 }
 
-#services table {
+table {
   margin: 20px auto;
   border: 1px solid #dddddd;
   width: 90%;
 }
 
-#services table #tr-head {
-  background-color: #27a544;
+table #tr-head {
+  background-color: #74d6b9;
   width: 100%;
   color: #fff;
 
 }
 
-#services table tr td{
+table tr td{
   padding: 7px 5px 7px 15px;
   width: 200px;
+  text-transform: capitalize;
 }
 
 tr:nth-child(even) {background: #FFF}
-tr:nth-child(odd) {background: #CCC}
+tr:nth-child(odd) {background: #eee}
 
 
 #about {
-  margin-top: 10px;
+  margin-top: 150px;
   position: relative;
 }
 
@@ -172,11 +197,28 @@ tr:nth-child(odd) {background: #CCC}
   color: #fff;
   height: 35px;
   padding-top: 5px;
+  bottom: 0px;
 }
 
 #reserve-unit .heading {
-  margin: 50px 0px 0px 0px;
+  margin: 70px 0px 0px 0px;
   padding: 10px 0px;
   background-color: #efefef;
   font-weight: lighter;
+}
+
+#reserve-unit form {
+  margin-top: 30px;
+}
+
+#reserve-unit form input {
+  margin: 10px -10px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  width: 100%;
+}
+
+#reserve-unit table {
+  margin-top: 30px;
 }
